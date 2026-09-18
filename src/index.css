@@ -24,6 +24,7 @@ nav {
 
 .logo {
     width: 40px;
+    height: auto;
 }
 
 nav span {
@@ -37,6 +38,7 @@ nav span {
 
 main {
     min-height: calc(100vh - 90px);
+    width: 100%;
     padding: 40px 20px;
     background-color: #282d35;
     color: white;
@@ -66,23 +68,24 @@ main ul {
 
 main li {
     margin-bottom: 12px;
-    font-family: 'Inter', sans-serif;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
 main li::marker {
     color: #61dafb;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 /* MOBILE */
 
 @media (max-width: 600px) {
+
     main {
         padding: 30px 20px;
-        background-size: 180px;
-        background-position: right center;
+        background-size: 160px;
+        background-position: right 100px;
     }
 
     main h1 {
@@ -90,10 +93,14 @@ main li::marker {
     }
 
     main ul {
+        width: 100%;
         max-width: 100%;
+        padding-left: 25px;
     }
 
     main li {
         font-size: 18px;
+        line-height: 1.5;
     }
 }
+
