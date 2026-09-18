@@ -1,3 +1,4 @@
+```css
 * {
     box-sizing: border-box;
 }
@@ -5,7 +6,6 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-
 }
 
 /* NAVBAR */
@@ -13,13 +13,12 @@ body {
 .header {
     background-color: #21222a;
     height: 90px;
-    padding: 30px 25px;
+    padding: 0 25px;
 }
 
 nav {
     display: flex;
     align-items: center;
-    padding: 20px;
     height: 100%;
 }
 
@@ -37,7 +36,7 @@ nav span {
 /* MAIN */
 
 main {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 90px);
     padding: 40px 20px;
     background-color: #282d35;
     color: white;
@@ -45,6 +44,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     background-image: url("/react-logo.png");
     background-repeat: no-repeat;
     background-position: right center;
@@ -52,37 +52,37 @@ main {
 }
 
 main h1 {
-
+    margin: 0;
     font-size: 2.1rem;
-    margin-right: 200px;
-
+    text-align: center;
 }
 
 main ul {
+    width: 100%;
+    max-width: 500px;
     margin: 20px 0 0;
-    padding: 0;
-    width: 500px;
-    text-align: left;
+    padding-left: 25px;
 }
 
-
-
 main li {
-
+    margin-bottom: 12px;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 200;
-    margin-bottom: 12px;
-
 }
+
 main li::marker {
     color: #61dafb;
     font-size: 35px;
 }
 
+/* MOBILE */
+
 @media (max-width: 600px) {
     main {
         padding: 30px 20px;
+        background-size: 180px;
+        background-position: right center;
     }
 
     main h1 {
@@ -90,11 +90,11 @@ main li::marker {
     }
 
     main ul {
-        margin-right: 0;
-        padding-left: 25px;
+        max-width: 100%;
     }
 
     main li {
         font-size: 18px;
     }
 }
+```
