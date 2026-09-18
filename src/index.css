@@ -79,3 +79,22 @@ main li::marker {
     color: #61dafb;
     font-size: 35px;
 }
+
+@media (max-width: 600px) {
+    main {
+        padding: 30px 20px;
+    }
+
+    main h1 {
+        font-size: 28px;
+    }
+
+    main ul {
+        margin-right: 0;
+        padding-left: 25px;
+    }
+
+    main li {
+        font-size: 18px;
+    }
+}
