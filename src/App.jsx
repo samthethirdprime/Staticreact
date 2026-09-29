@@ -1,8 +1,9 @@
 // Have App component import and render the Navbar and Main components
+import './App.css'
 import Main from "../components/main.jsx";
 import Navbar from "../components/Navbar.jsx";
 
-export default function App() {
+ function App() {
     return(
         <>
         <Navbar />
@@ -12,3 +13,5 @@ export default function App() {
     )
 
 }
+
+export default App
