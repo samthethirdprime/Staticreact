@@ -47,7 +47,7 @@ main {
     flex-direction: column;
     align-items: center;
 
-    background-image: url("/react-logo.png");
+    background-image: url("../components/react-logo.png");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 300px;

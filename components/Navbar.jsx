@@ -1,5 +1,5 @@
 
-import logo from '../react-logo.png'
+import logo from './react-logo.png'
 export default function NavBar() {
     return(
         <header className="header">
